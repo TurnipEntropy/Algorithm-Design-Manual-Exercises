@@ -22,4 +22,11 @@
 ###Proofs of Correctness  
 1-7. Trivial proof: for all c > z, integer division of z / c = 0, and z % c = z, so it results in 0 + y * z, which is obviously equal to y * z.  
   
-The more difficult proof is for all c < z. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The more difficult proof is for all c < z. It's a recursive algorithm, and so eventually c > z,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;so we just need to prove that for any y, z, and c that   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y * z = c * y * z i/ c + y * (z % c)&nbsp;&nbsp;(i/ == integer divide, or divide and floor the result)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z i/c = z / c - (z % c) / c =>> c * y * (z / c - (z % c) / c) + y * (z % c) = y * z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c * y * z - (z % c) * c * y) / c + y * (z % c) = y * z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(y * z - (z % c) * y) + y * (z % c) = y * z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y * z = y * z
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QED
