@@ -19,3 +19,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you chose the set that covers the most of U, you'd pick S<sub>1</sub> first, but then you would  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;have to pick both S<sub>2</sub> and S<sub>3</sub> to cover U, resulting in 3 sets to cover U. S<sub>2</sub> and S<sub>3</sub> cover U  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on their own, however, and are the actual smallest set cover.
+###Proofs of Correctness  
+1-7. Trivial proof: for all c > z, integer division of z / c = 0, and z % c = z, so it results in 0 + y * z, which is obviously equal to y * z.  
+  
+The more difficult proof is for all c < z. 
